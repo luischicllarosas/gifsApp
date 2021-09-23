@@ -4,12 +4,11 @@ import { GifsService } from '../services/gifs.service';
 @Component({
   selector: 'gifs-busqueda',
   templateUrl: './busqueda.component.html',
-  styles: [
-  ]
 })
 export class BusquedaComponent {
 
   @ViewChild('txtBuscar') txtBuscar!: ElementRef<HTMLInputElement>
+
 
   constructor(private gifsService: GifsService) { }
 
