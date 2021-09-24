@@ -5,6 +5,7 @@
 
         <!-- Historial -->
         <a *ngFor="let item of GifsHistorial"
+        (click)="buscar(item)"
             href="#" class="p-3 rounded-xl mt-2 bg-white">{{ item | titlecase }}</a>
     </div>
 </div>

@@ -1,6 +1,7 @@
 <div class="grid grid-cols-3 gap-4">
-    <div *ngFor="let gif of resultados">
-        <div>{{ gif }}</div>
+    <div *ngFor="let gif of resultados"
+        class="animate__animated animate__fadeIn">
+        <div>{{ gif.title }}</div>
         <img [src]="gif.images.downsized_medium.url" [alt]="gif.title">
     </div>
     <div>
